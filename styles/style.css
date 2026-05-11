@@ -4,7 +4,6 @@
     padding: 0;
 
     text-decoration: none;
-    
     color: #181C29;
 }
 
@@ -94,14 +93,17 @@ p {
     text-transform: uppercase;
 }
 
-.white {
+.white  * {
     color: #FFFFFF;
 }
 
-.primary {
+.primary * {
     color: #FF4646;
 }
 
+.text-left {
+    text-align: start;
+}
 
 .site-header {
     display: flex;
@@ -133,6 +135,8 @@ p {
     
     background-color: #FF4646;
     border-radius: 20px;
+
+    background-image: url("/images/bg-images/bg-snow.png");
 }
 
 .section-container {
@@ -142,4 +146,28 @@ p {
     flex-direction: column;
     margin: 30px 41px;
     padding: 30px 41px;
+    gap: 12px;
+
+    text-align: center;
+}
+
+.hero-section .section-container {
+     max-width: 426px;
+}
+
+.hero-section {
+    min-height: 524px;
+    
+    background-image: url("/images/bg-images/bg-ball.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.gifts-button {
+    padding: 20px 32px;
+    
+    
+    background-color: #181C29;
+    border-radius: 20px;
 }
