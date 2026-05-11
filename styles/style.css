@@ -98,6 +98,10 @@ p {
     color: #FFFFFF;
 }
 
+.primary {
+    color: #FF4646;
+}
+
 
 .site-header {
     display: flex;
