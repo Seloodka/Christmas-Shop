@@ -1,10 +1,10 @@
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
 
-    box-sizing: border-box;
-
     text-decoration: none;
+    
     color: #181C29;
 }
 
@@ -25,30 +25,25 @@ ul {
     line-height: 130%;
     letter-spacing: 5%;
     text-transform: uppercase;
-    
 }
 
 .site-header {
-    margin: 0px 41px;
-    padding: 0px 41px;
-
     display: flex;
     justify-content: space-between;
-
     height: 64px;
+    margin: 0px 41px;
+    padding: 0px 41px;
 }
 
 .logo {
     margin: auto 20px;
-    
     gap: 8px;
 }
 
 .header-nav{
-    margin: auto 0px;
     display: flex;
     align-items: center;
-    
+    margin: auto 0px;
     gap: 8px;
 }
 
@@ -65,11 +60,10 @@ ul {
 }
 
 .section-container {
-    margin: 30px 41px;
-    padding: 30px 41px;
-
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin: 30px 41px;
+    padding: 30px 41px;
 }
