@@ -1,6 +1,28 @@
 * {
     margin: 0;
     padding: 0;
-    
+
     box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+.page-content {  
+    display: flex;
+    flex-direction: column;
+    
+    background-color: #FF4646;
+    border-radius: 20px;
+}
+
+.section-container {
+    margin: 30px 41px;
+    padding: 30px 41px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
