@@ -9,6 +9,10 @@ ul {
     list-style: none;
 }
 
+.action-small {
+    font: 24px/1.52 Montserrat sans-serif;
+}
+
 .page-content {  
     display: flex;
     flex-direction: column;
