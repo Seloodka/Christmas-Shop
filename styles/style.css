@@ -18,7 +18,7 @@ ul {
     align-items: center;
 }
 
-.header-1 {
+.header-1, h1 {
     font-family: "Montserrat", sans-serif;
     font-size: 32px;
     font-weight: 600;
@@ -27,7 +27,7 @@ ul {
     text-transform: uppercase;
 }
 
-.header-2 {
+.header-2, h2{
     font-family: "Montserrat", sans-serif;
     font-size: 24px;
     font-weight: 600;
@@ -36,7 +36,7 @@ ul {
     text-transform: uppercase;
 }
 
-.header-3 {
+.header-3, h3 {
     font-family: "Montserrat", sans-serif;
     font-size: 16px;
     font-weight: 600;
@@ -45,7 +45,7 @@ ul {
     text-transform: uppercase;
 }
 
-.header-4 {
+.header-4, h4 {
     font-family: "Montserrat", sans-serif;
     font-size: 12px;
     font-weight: 600;
