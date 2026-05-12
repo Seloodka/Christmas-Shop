@@ -17,11 +17,7 @@
 .filter-item {
     padding: 12px 20px;
     
-    
-    background: none;
-    border: none;
     border-radius: 12px;
-    outline: none; 
 }
 
 .current-filter {

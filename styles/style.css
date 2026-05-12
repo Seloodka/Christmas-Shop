@@ -11,6 +11,12 @@ ul {
     list-style: none;
 }
 
+button {
+    background: none;
+    border: none;
+    outline: none;
+}
+
 .flex-center {
     display: flex;
     justify-content: center;
@@ -109,6 +115,10 @@ p {
 
 .text-left {
     text-align: start;
+}
+
+.non-active {
+    opacity: 0.4;
 }
 
 /* Global styles */
@@ -266,6 +276,21 @@ p {
 
 .slider-container .image-container {
     max-height: 200px;
+}
+
+.slider-controls {
+    display: flex;
+    justify-content: end;
+    gap: 20px;
+}
+
+.slider-button {
+    padding: 15px;
+    display: flex;
+    align-items: center;
+
+    border: solid 1px #FFFFFF;
+    border-radius: 20px;
 }
 
 /* Best gifts section */
