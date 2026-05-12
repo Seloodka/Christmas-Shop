@@ -333,15 +333,15 @@ p {
     border-radius: 20px;
 }
 
-.card-work h4{
+.card-work .header-4{
     color: #4361FF;
 }
 
-.card-health h4{
+.card-health .header-4{
     color: #06A44F;
 }
 
-.card-harmony h4{
+.card-harmony .header-4{
     color: #FF43F7;
 }
 
