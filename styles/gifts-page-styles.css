@@ -1,0 +1,22 @@
+.gifts-section .section-container {
+    gap: 20px
+}
+
+.filter {
+    display: flex;
+    gap: 8px;
+}
+
+.filter-item {
+    padding: 12px 20px;
+    
+    
+    background: none;
+    border: none;
+    border-radius: 12px;
+    outline: none; 
+}
+
+.current-filter {
+    background-color: rgba(255, 255, 255, 0.2);
+}
