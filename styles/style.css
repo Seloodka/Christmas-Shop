@@ -207,3 +207,55 @@ p {
     margin-left: 60px;
     max-width: 426px;
 }
+
+/* Best gifts section */
+.best-gifts-section .section-container {
+    gap: 20px;
+}
+.section-header {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+/* Cards */
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 310px;
+
+    background-color: #ECF3F8;
+    border-radius: 20px;
+}
+
+.card .image-container img {
+    max-width: 310px;
+}
+
+.card-text {
+    display: flex;
+    flex-direction: column-reverse;
+    height: 112px;
+    
+    padding: 20px 20px 44px;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+}
+.card-work h4{
+    color: #4361FF;
+}
+.card-health h4{
+    color: #06A44F;
+}
+.card-harmony h4{
+    color: #FF43F7;
+}
