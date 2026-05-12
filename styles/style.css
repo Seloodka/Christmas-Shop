@@ -131,7 +131,9 @@ p {
     background-color: #FF4646;
     border-radius: 20px;
     width: 100%;
+}
 
+.snow {
     background-image: url("/images/bg-images/bg-snow.png");
 }
 
