@@ -16,6 +16,8 @@ ul {
     justify-content: center;
     align-items: center;
 }
+    
+/* Text styles */
 
 .header-1, h1 {
     font-family: "Montserrat", sans-serif;
@@ -105,6 +107,47 @@ p {
     text-align: start;
 }
 
+/* Global styles */
+
+.page-content {  
+    display: flex;
+    flex-direction: column;
+    
+    background-color: #FF4646;
+    border-radius: 20px;
+
+    background-image: url("/images/bg-images/bg-snow.png");
+}
+
+.section-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 30px 41px;
+    padding: 30px 41px;
+
+    text-align: center;
+}
+
+.gifts-button {
+    padding: 20px 32px;
+    
+    
+    background-color: #181C29;
+    border-radius: 20px;
+}
+
+.image-container {
+  display: flex;
+}
+
+.image-container img {
+  border-radius: 20px;
+}
+
+/* Header */
+
 .site-header {
     display: flex;
     justify-content: space-between;
@@ -129,26 +172,7 @@ p {
     margin: auto 20px;
 }
 
-.page-content {  
-    display: flex;
-    flex-direction: column;
-    
-    background-color: #FF4646;
-    border-radius: 20px;
-
-    background-image: url("/images/bg-images/bg-snow.png");
-}
-
-.section-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin: 30px 41px;
-    padding: 30px 41px;
-
-    text-align: center;
-}
+/* Hero section */
 
 .hero-section .section-container {
      max-width: 426px;
@@ -164,13 +188,7 @@ p {
     background-repeat: no-repeat;
 }
 
-.gifts-button {
-    padding: 20px 32px;
-    
-    
-    background-color: #181C29;
-    border-radius: 20px;
-}
+/* About section  */
 
 .content-container {
     display: flex;
@@ -188,12 +206,4 @@ p {
     gap: 20px;
     margin-left: 60px;
     max-width: 426px;
-}
-
-.image-container {
-  display: flex;
-}
-
-.image-container img {
-  border-radius: 20px;
 }
