@@ -209,9 +209,11 @@ p {
 }
 
 /* Best gifts section */
+
 .best-gifts-section .section-container {
     gap: 20px;
 }
+
 .section-header {
     display: flex;
     flex-direction: column;
@@ -250,12 +252,15 @@ p {
     background-color: #FFFFFF;
     border-radius: 20px;
 }
+
 .card-work h4{
     color: #4361FF;
 }
+
 .card-health h4{
     color: #06A44F;
 }
+
 .card-harmony h4{
     color: #FF43F7;
 }
