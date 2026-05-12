@@ -16,7 +16,7 @@ ul {
     justify-content: center;
     align-items: center;
 }
-    
+
 /* Text styles */
 
 .header-1, h1 {
@@ -109,12 +109,24 @@ p {
 
 /* Global styles */
 
-.page-content {  
+.page {
     display: flex;
     flex-direction: column;
+    align-items: center;
+
+    flex-basis: 100%;
+}
+
+.page-max-width {
+    max-width: 1440px;
+}
+
+.page-content {  
+    display: flex;
     
     background-color: #FF4646;
     border-radius: 20px;
+    width: 100%;
 
     background-image: url("/images/bg-images/bg-snow.png");
 }
@@ -134,6 +146,8 @@ p {
     display: flex;
     flex-direction: column;
     gap: 12px;
+
+    width: 100%;
 }
 
 .gifts-button {
@@ -163,6 +177,8 @@ p {
     height: 64px;
     margin: 0px 41px;
     padding: 0px 41px;
+
+    width: 100%;
 }
 
 .logo {
@@ -333,6 +349,10 @@ p {
 
 /* footer */
 
+.site-footer {
+    width: 100%;
+}
+
 .site-footer .section-container {
     gap: 60px;
 }
@@ -350,7 +370,7 @@ p {
 .footer-nav {
     display: flex;
     gap: 12px;
-    
+    width: 100%;
 }
 
 .nav-item-container {
