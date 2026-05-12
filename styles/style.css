@@ -151,6 +151,11 @@ p {
     background-image: url("/images/bg-images/bg-snow.png");
 }
 
+.page-content-container {
+    display: flex;
+    flex-direction: column;
+}
+
 .section-container {
     display: flex;
     justify-content: center;
@@ -200,9 +205,7 @@ p {
     display: flex;
     justify-content: space-between;
     height: 64px;
-    margin: 0px 41px;
-    padding: 0px 41px;
-
+    padding: 0px 82px;
     width: 100%;
 }
 
@@ -234,7 +237,7 @@ p {
     
     background-image: url("/images/bg-images/bg-ball.png");
     background-position: center;
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
 }
 
@@ -353,12 +356,13 @@ p {
     background-image: url("/images/bg-images/bg-forest.png");
     
     background-position: bottom;
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
+
+    min-height: 668px;
 }
 
 .cta-section .section-container {
-    margin: 105px 0px;
     gap: 20px;
     max-width: 500px;
 }
@@ -421,7 +425,11 @@ p {
 }
 
 .nav-item {
-   display: block;
+   display: flex;
+   flex-flow: column;
+   align-items: center;
+
+    gap: 12px;
     padding: 20px;
 
     background-color: #ECF3F8;
