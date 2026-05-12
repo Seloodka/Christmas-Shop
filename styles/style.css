@@ -99,6 +99,10 @@ p {
     color: #FFFFFF;
 }
 
+.solo-white {
+    color: #FFFFFF;
+}
+
 .primary {
     color: #FF4646;
 }
@@ -169,6 +173,11 @@ p {
     max-width: inherit;
 }
 
+.current {
+    color: #FF4646;
+    background-color: rgba(255, 70, 70, 0.1);
+}
+
 /* Header */
 
 .site-header {
@@ -189,12 +198,12 @@ p {
 .header-nav{
     display: flex;
     align-items: center;
-    margin: auto 0px;
     gap: 8px;
 }
 
-.header-nav li {
-    margin: auto 20px;
+.header-nav-item {
+    padding: 12px 20px;
+    border-radius: 12px;
 }
 
 /* Hero section */
