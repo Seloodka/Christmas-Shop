@@ -113,6 +113,10 @@ p {
 
 /* Global styles */
 
+.max-width-426 {
+    max-width: 426px;
+}
+
 .page {
     display: flex;
     flex-direction: column;
