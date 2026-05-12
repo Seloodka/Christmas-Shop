@@ -145,11 +145,13 @@ p {
 }
 
 .image-container {
-  display: flex;
+  border-radius: 20px;
 }
 
 .image-container img {
-  border-radius: 20px;
+    border-radius: inherit;
+    max-height: inherit;
+    max-width: inherit;
 }
 
 /* Header */
@@ -216,7 +218,23 @@ p {
 
 /* Slider section */
 
+.slider-section .section-container {
+    gap: 20px;
+}
 
+.slider-container {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 20px;
+    max-width: 100%;
+
+    overflow: visible;
+}
+
+.slider-container .image-container {
+    max-height: 200px;
+}
 
 /* Best gifts section */
 
@@ -243,7 +261,7 @@ p {
     border-radius: 20px;
 }
 
-.card .image-container img {
+.card .image-container {
     max-width: 310px;
 }
 
@@ -305,13 +323,8 @@ p {
 
 .social-media {
     gap: 12px;
-
 }
 
-.social-media li {
-    padding: 8px;
-}
-
-.social-media img {
-    width: 24px;
+.social-media .image-container{
+  max-width: 24px;
 }
