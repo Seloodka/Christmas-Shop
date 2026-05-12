@@ -264,3 +264,50 @@ p {
 .card-harmony h4{
     color: #FF43F7;
 }
+
+/* footer */
+
+.site-footer .section-container {
+    gap: 60px;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.nav-container {
+    width: 100%;
+}
+
+.footer-nav {
+    display: flex;
+    gap: 12px;
+    
+}
+
+.nav-item-container {
+    flex: 1;
+}
+
+.nav-item {
+   display: block;
+    padding: 20px;
+
+    background-color: #ECF3F8;
+    border-radius: 20px;
+}
+
+.social-media {
+    gap: 12px;
+
+}
+
+.social-media li {
+    padding: 8px;
+}
+
+.social-media img {
+    width: 24px;
+}
