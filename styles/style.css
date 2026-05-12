@@ -327,4 +327,11 @@ p {
 
 .social-media .image-container{
   max-width: 24px;
+  color: #FF4646;
+}
+
+.social-media-item {
+    display: flex;
+    align-items: center;
+    padding: 8px;
 }
