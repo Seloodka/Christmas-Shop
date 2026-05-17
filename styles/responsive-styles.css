@@ -1,8 +1,4 @@
-@media only screen and (max-width: 1440px) {
-
-}
-
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 768px) {
   .site-header {
     padding: 0px 8px;
   }
@@ -10,11 +6,10 @@
   .section-container {
     margin: 30px 4px;
     padding: 30px 4px;
-
   }
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 380px) {
   .content-container {
     padding-top: 60px;
     flex-wrap: wrap;
