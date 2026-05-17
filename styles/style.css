@@ -215,6 +215,7 @@ p {
 .site-header {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     height: 64px;
     padding: 0px 82px;
     width: 100%;
@@ -234,6 +235,9 @@ p {
 .header-nav-item {
     padding: 12px 20px;
     border-radius: 12px;
+}
+.burger-icon {
+   display: none;
 }
 
 /* Hero section */
