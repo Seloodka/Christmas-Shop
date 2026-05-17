@@ -284,6 +284,7 @@ p {
 
 .slider-container .image-container {
     max-height: 200px;
+    min-width: 200px;
 }
 
 .slider-controls {
