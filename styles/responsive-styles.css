@@ -36,4 +36,11 @@
     margin: 0 20px;
     width: 100%;
   }
+  .filter {
+    gap: 0px;
+  }
+
+.filter-item {
+    padding: 12px 8px;
+  }
 }
