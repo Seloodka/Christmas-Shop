@@ -23,6 +23,16 @@ button {
     align-items: center;
 }
 
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.gap-12 {
+  gap: 12px;
+}
+
 /* Text styles */
 
 .header-1, h1 {
@@ -171,8 +181,6 @@ p {
 .section-header {
     display: flex;
     flex-direction: column;
-    gap: 12px;
-
     width: 100%;
 }
 
@@ -229,11 +237,6 @@ p {
 }
 
 /* Hero section */
-
-.hero-section .section-container {
-     max-width: 426px;
-     gap: 12px;
-}
 
 .hero-section {
     min-height: 524px;
@@ -315,7 +318,6 @@ p {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 12px;
 }
 
 .card {
@@ -413,7 +415,6 @@ p {
 .footer-container {
     display: flex;
     flex-direction: column;
-    gap: 12px;
 }
 
 .nav-container {
@@ -422,7 +423,6 @@ p {
 
 .footer-nav {
     display: flex;
-    gap: 12px;
     width: 100%;
 }
 
@@ -431,19 +431,14 @@ p {
 }
 
 .nav-item {
-   display: flex;
-   flex-flow: column;
-   align-items: center;
-
+    display: flex;
+    flex-flow: column;
+    align-items: center;
     gap: 12px;
     padding: 20px;
 
     background-color: #ECF3F8;
     border-radius: 20px;
-}
-
-.social-media {
-    gap: 12px;
 }
 
 .social-media .image-container{
