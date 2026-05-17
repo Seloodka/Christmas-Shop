@@ -1,9 +1,6 @@
 @media only screen and (max-width: 1200px) {
   .footer-nav {
-    flex-wrap: wrap;
-  }
-  .nav-item-container {
-    min-width: 100%;
+    flex-direction: column;
   }
   
   .site-header {
