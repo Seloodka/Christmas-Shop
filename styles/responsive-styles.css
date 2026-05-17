@@ -1,7 +1,18 @@
-@media only screen and (max-width: 768px) {
-  
+@media only screen and (max-width: 1440px) {
+
 }
 
-@media only screen and (max-width: 380px) {
-  
+@media only screen and (max-width: 1000px) {
+  .section-container {
+    margin: 30px 4px;
+    padding: 30px 4px;
+
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .content-container {
+    padding-top: 60px;
+    flex-wrap: wrap;
+  }
 }
