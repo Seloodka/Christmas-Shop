@@ -1,5 +1,5 @@
 .garland {
-    background-image: url("/images/bg-images/bg-garland.png");
+    background-image: url("../images/bg-images/bg-garland.png");
     background-position: top;
     background-size: contain;
     background-repeat: no-repeat;
