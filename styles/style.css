@@ -155,16 +155,14 @@ p {
     width: 100%;
 }
 
-.page-content {  
+.page-wrapper {  
     display: flex;
-    
-    background-color: #FF4646;
-    border-radius: 20px;
     width: 100%;
-}
 
-.snow {
     background-image: url("../images/bg-images/bg-snow.png");
+    background-color: #FF4646;
+    background-size: contain;
+    border-radius: 20px;
 }
 
 .page-content-container {
