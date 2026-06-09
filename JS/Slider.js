@@ -1,11 +1,12 @@
 const sliderContainer = document.querySelector('.slider-container');
 const nextButton = document.querySelector('.slider-next');
 const prevButton = document.querySelector('.slider-prev');
-const shiftPos = (document.documentElement.clientWidth >= 769) ?  300 : 300;
+
 const maxSlides = (document.documentElement.clientWidth >= 769) ?  4 : 6;
+
 let currSlide = 0;
 
-console.log(sliderContainer, nextButton, prevButton);
+
 
 function toggleSliderButton() {
   if (currSlide === 0) {
@@ -15,30 +16,41 @@ function toggleSliderButton() {
     return nextButton.classList.add('non-active');
   } 
   
-  return document.querySelectorAll('.slider-button')
+  document.querySelectorAll('.slider-button')
   .forEach((button) => button.classList.remove('non-active'));
 }
 
-nextButton.addEventListener('click', () => {
- 
-  if (nextButton.matches('.non-active')) {
+function shiftSliderPos(pos) {
+  sliderContainer.style.transform = `translateX(${pos}px)`;
+}
+
+function isActive(button) {
+  if (button.matches('.non-active')) {
     console.log('ban')
+    return false;
+  }
+
+  return true;
+}
+
+nextButton.addEventListener('click', () => { 
+  if (!isActive(nextButton)) {
     return;
   }
 
   currSlide += 1;
-  sliderContainer.style.transform = `translateX(${-shiftPos*currSlide}px)`;
-
+  
+  shiftSliderPos((document.querySelector('.page-max-width').clientWidth - 164 - sliderContainer.scrollWidth)  / maxSlides * currSlide)
   toggleSliderButton()
 });
 
 prevButton.addEventListener('click', () => {
-  if (prevButton.matches('.non-active')) {
-    console.log('ban')
+  if (!isActive(prevButton)) {
     return;
   }
+
   currSlide -= 1;
-  sliderContainer.style.transform = `translateX(${-shiftPos*currSlide}px)`;
   
+  shiftSliderPos((document.querySelector('.page-max-width').clientWidth - 164 - sliderContainer.scrollWidth)  / maxSlides * currSlide)
   toggleSliderButton()
 });
