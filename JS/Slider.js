@@ -4,25 +4,22 @@ const prevButton = document.querySelector('.slider-prev');
 
 const mediaQuery = window.matchMedia('(max-width: 768px)');
 
-let maxSlides = (document.documentElement.clientWidth >= 769) ?  4 : 6;
-let margins = (document.documentElement.clientWidth >= 769) ?  164 : 16;
+let maxSlides = (document.body.clientWidth >= 768) ?  4 : 6;
+let margins = (document.body.clientWidth >= 768) ?  164 : 16;
 
 let currSlide = 0;
 
 function toggleSliderButton() {
-  if (currSlide === 0) {
-    return prevButton.classList.add('non-active');
-  } 
-  if (currSlide === maxSlides) {
-    return nextButton.classList.add('non-active');
-  } 
-  
-  document.querySelectorAll('.slider-button')
-  .forEach((button) => button.classList.remove('non-active'));
+  prevButton.classList.toggle('non-active', currSlide === 0);
+  nextButton.classList.toggle('non-active', currSlide === maxSlides);
 }
 
-function shiftSliderPos(pos) {
-  sliderContainer.style.transform = `translateX(${pos}px)`;
+function shiftSliderPos() {
+  const layoutWidth = document.querySelector('.page-max-width').clientWidth;
+  const sliderWidth = sliderContainer.scrollWidth;
+  const newPos = (layoutWidth - margins - sliderWidth)  / maxSlides * currSlide;
+
+  sliderContainer.style.transform = `translateX(${newPos}px)`;
 }
 
 function isActive(button) {
@@ -34,24 +31,14 @@ function isActive(button) {
   return true;
 }
 
-function changeSlide(button) {
-  
-  if (!isActive(button)) {
-    return;
-  }
+function changeSlide(direction) {
+  if (direction === 'next' && (nextButton.matches('non-active'))) return;
+  if (direction === 'prev' && (prevButton.matches('non-active'))) return;
 
-  if (button == nextButton) {
-    currSlide += 1;
-  } else {
-    currSlide -= 1;
-  }
+  currSlide += (direction === 'next') ? 1 : -1
 
   toggleSliderButton()
-
-  const layoutWidth = document.querySelector('.page-max-width').clientWidth;
-  const sliderWidth = sliderContainer.scrollWidth;
-
-  shiftSliderPos((layoutWidth - margins - sliderWidth)  / maxSlides * currSlide)
+  shiftSliderPos()
 }
 
 function updateVariables() {
@@ -66,10 +53,13 @@ function updateVariables() {
   if (currSlide > maxSlides) {
     currSlide = maxSlides;
   }
+
+  toggleSliderButton()
+  shiftSliderPos()
 }
 
 mediaQuery.addEventListener('change', updateVariables);
 
-nextButton.addEventListener('click', () => changeSlide(nextButton));
+nextButton.addEventListener('click', () => changeSlide('next'));
 
-prevButton.addEventListener('click', () => changeSlide(prevButton));
+prevButton.addEventListener('click', () => changeSlide('prev'));
