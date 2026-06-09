@@ -325,11 +325,15 @@ p {
     cursor: pointer;
 }
 
+@media (hover: hover){
+    
 .slider-button:hover {
     background-color: #FFFFFF;
     svg path{
-        stroke: red;
+        stroke: #FF4646;
     }
+}
+
 }
 
 /* Best gifts section */
