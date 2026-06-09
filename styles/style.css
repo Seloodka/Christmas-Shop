@@ -335,7 +335,7 @@ p {
 }
 
 .slider-button:active {
-    transform: scale(0.8);
+    transform: scale(1.2);
 }
 
 /* Best gifts section */
