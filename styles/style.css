@@ -297,6 +297,12 @@ p {
     min-width: 200px;
 }
 
+.slider-element {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
 .slider-controls {
     display: flex;
     justify-content: end;
