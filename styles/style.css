@@ -163,6 +163,8 @@ p {
     background-color: #FF4646;
     background-size: contain;
     border-radius: 20px;
+
+    overflow-x: hidden;
 }
 
 .page-content-container {
