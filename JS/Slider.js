@@ -2,11 +2,26 @@ const sliderContainer = document.querySelector('.slider-container');
 const nextButton = document.querySelector('.slider-next');
 const prevButton = document.querySelector('.slider-prev');
 
-const maxSlides = (document.documentElement.clientWidth >= 769) ?  4 : 6;
+const mediaQuery = window.matchMedia('(max-width: 768px)');
+
+let maxSlides = (document.documentElement.clientWidth >= 769) ?  4 : 6;
+let margins = (document.documentElement.clientWidth >= 769) ?  164 : 16;
 
 let currSlide = 0;
 
+function updateVariables() {
+  if (document.documentElement.clientWidth >= 769) {
+    maxSlides = 4
+    margins = 164;
+  } else {
+    maxSlides = 6;
+    margins = 16;
+  }
 
+  if (currSlide > maxSlides) {
+    currSlide = maxSlides;
+  }
+}
 
 function toggleSliderButton() {
   if (currSlide === 0) {
@@ -33,6 +48,8 @@ function isActive(button) {
   return true;
 }
 
+mediaQuery.addEventListener('change', updateVariables);
+
 nextButton.addEventListener('click', () => { 
   if (!isActive(nextButton)) {
     return;
@@ -40,7 +57,7 @@ nextButton.addEventListener('click', () => {
 
   currSlide += 1;
   
-  shiftSliderPos((document.querySelector('.page-max-width').clientWidth - 164 - sliderContainer.scrollWidth)  / maxSlides * currSlide)
+  shiftSliderPos((document.querySelector('.page-max-width').clientWidth - margins - sliderContainer.scrollWidth)  / maxSlides * currSlide)
   toggleSliderButton()
 });
 
@@ -51,6 +68,6 @@ prevButton.addEventListener('click', () => {
 
   currSlide -= 1;
   
-  shiftSliderPos((document.querySelector('.page-max-width').clientWidth - 164 - sliderContainer.scrollWidth)  / maxSlides * currSlide)
+  shiftSliderPos((document.querySelector('.page-max-width').clientWidth - margins - sliderContainer.scrollWidth)  / maxSlides * currSlide)
   toggleSliderButton()
 });
