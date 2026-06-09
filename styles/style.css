@@ -321,19 +321,21 @@ p {
     border: solid 1px #FFFFFF;
     border-radius: 20px;
     
-    transition: background-color 0.5s;
+    transition: background-color 0.5s, transform 0.1s;
     cursor: pointer;
 }
 
 @media (hover: hover){
-    
-.slider-button:hover {
-    background-color: #FFFFFF;
-    svg path{
-        stroke: #FF4646;
+    .slider-button:hover {
+        background-color: #FFFFFF;
+        svg path{
+            stroke: #FF4646;
+        }
     }
 }
 
+.slider-button:active {
+    transform: scale(0.8);
 }
 
 /* Best gifts section */
