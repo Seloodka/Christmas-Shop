@@ -9,20 +9,6 @@ let margins = (document.documentElement.clientWidth >= 769) ?  164 : 16;
 
 let currSlide = 0;
 
-function updateVariables() {
-  if (document.documentElement.clientWidth >= 769) {
-    maxSlides = 4
-    margins = 164;
-  } else {
-    maxSlides = 6;
-    margins = 16;
-  }
-
-  if (currSlide > maxSlides) {
-    currSlide = maxSlides;
-  }
-}
-
 function toggleSliderButton() {
   if (currSlide === 0) {
     return prevButton.classList.add('non-active');
@@ -48,26 +34,41 @@ function isActive(button) {
   return true;
 }
 
+function changeSlide(button) {
+  
+  if (!isActive(button)) {
+    return;
+  }
+
+  if (button == nextButton) {
+    currSlide += 1;
+  } else {
+    currSlide -= 1;
+  }
+
+  const layoutWidth = document.querySelector('.page-max-width').clientWidth;
+  const sliderWidth = sliderContainer.scrollWidth;
+
+  shiftSliderPos((layoutWidth - margins - sliderWidth)  / maxSlides * currSlide)
+  toggleSliderButton()
+}
+
+function updateVariables() {
+  if (mediaQuery.matches) {
+    maxSlides = 6;
+    margins = 16;
+  } else {
+    maxSlides = 4
+    margins = 164;
+  }
+
+  if (currSlide > maxSlides) {
+    currSlide = maxSlides;
+  }
+}
+
 mediaQuery.addEventListener('change', updateVariables);
 
-nextButton.addEventListener('click', () => { 
-  if (!isActive(nextButton)) {
-    return;
-  }
+nextButton.addEventListener('click', () => changeSlide(nextButton));
 
-  currSlide += 1;
-  
-  shiftSliderPos((document.querySelector('.page-max-width').clientWidth - margins - sliderContainer.scrollWidth)  / maxSlides * currSlide)
-  toggleSliderButton()
-});
-
-prevButton.addEventListener('click', () => {
-  if (!isActive(prevButton)) {
-    return;
-  }
-
-  currSlide -= 1;
-  
-  shiftSliderPos((document.querySelector('.page-max-width').clientWidth - margins - sliderContainer.scrollWidth)  / maxSlides * currSlide)
-  toggleSliderButton()
-});
+prevButton.addEventListener('click', () => changeSlide(prevButton));
