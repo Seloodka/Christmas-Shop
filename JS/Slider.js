@@ -46,11 +46,12 @@ function changeSlide(button) {
     currSlide -= 1;
   }
 
+  toggleSliderButton()
+
   const layoutWidth = document.querySelector('.page-max-width').clientWidth;
   const sliderWidth = sliderContainer.scrollWidth;
 
   shiftSliderPos((layoutWidth - margins - sliderWidth)  / maxSlides * currSlide)
-  toggleSliderButton()
 }
 
 function updateVariables() {
