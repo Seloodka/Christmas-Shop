@@ -25,4 +25,8 @@
   .card:hover .card-title {
     color: #FF4646;
   }
+
+  .nav-item:hover {
+    color: #FF4646;
+  }
 }
