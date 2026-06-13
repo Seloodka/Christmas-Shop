@@ -522,6 +522,10 @@ p {
     padding: 8px;
 }
 
+.social-media-item path {
+    transition: stroke 0.3s;
+}
+
 .school-link {
     transition: color 0.3s;
 }

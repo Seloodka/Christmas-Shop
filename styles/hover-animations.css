@@ -30,6 +30,10 @@
     color: #FF4646;
   }
 
+  .social-media-item:hover path {
+    stroke: #FF4646;
+  } 
+
   .school-link:hover {
     color: #FF4646;
   }
