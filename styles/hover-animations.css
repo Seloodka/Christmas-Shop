@@ -1,5 +1,10 @@
 @media (hover: hover){
 
+  .header-nav-item:hover {
+    color: #FF4646;
+    background-color: rgba(255, 70, 70, 0.1);
+  }
+
   .slider-button:hover {
     background-color: #FFFFFF;
     stroke: #FF4646;
@@ -9,5 +14,8 @@
     stroke: #FF4646;
   }
 
-  
+  .gifts-button:hover {
+    color: #181C29;
+    background-color: #FFFFFF;
+  }
 }
