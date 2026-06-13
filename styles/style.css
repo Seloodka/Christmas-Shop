@@ -4,7 +4,6 @@
     padding: 0;
 
     text-decoration: none;
-    color: #181C29;
 }
 
 ul {
@@ -47,6 +46,7 @@ button {
     line-height: 150%;
     letter-spacing: 18%;
     text-transform: uppercase;
+    color: #181C29;
 }
 
 .header-2, h2{
@@ -56,6 +56,7 @@ button {
     line-height: 152%;
     letter-spacing: 16%;
     text-transform: uppercase;
+    color: #181C29;
 }
 
 h3 {
@@ -65,6 +66,7 @@ h3 {
     line-height: 152%;
     letter-spacing: 8%;
     text-transform: uppercase;
+    color: #181C29;
 }
 
 h4 {
@@ -74,6 +76,7 @@ h4 {
     line-height: 130%;
     letter-spacing: 5%;
     text-transform: uppercase;
+    color: #181C29;
 }
 
 .action-large {
@@ -83,6 +86,7 @@ h4 {
     line-height: 152%;
     letter-spacing: 16%;
     text-transform: uppercase;
+    color: #181C29;
 }
 
 .action-small {
@@ -92,6 +96,7 @@ h4 {
     line-height: 130%;
     letter-spacing: 5%;
     text-transform: uppercase;
+    color: #181C29;
 }
 
 p {
@@ -99,6 +104,7 @@ p {
     font-size: 16px;
     font-weight: 400;
     line-height: 148%;
+    color: #181C29;
 }
 
 .caption {
@@ -107,6 +113,7 @@ p {
     font-weight: 400;
     line-height: 100%;
     letter-spacing: 5%;
+    color: #181C29;
 }
 
 .slider-text {
@@ -114,6 +121,7 @@ p {
     font-size: 80px;
     font-weight: 600;
     text-transform: uppercase;
+    color: #181C29;
 }
 
 .white * {
@@ -212,11 +220,6 @@ p {
     max-width: inherit;
 }
 
-.current {
-    color: #FF4646;
-    background-color: rgba(255, 70, 70, 0.1);
-}
-
 /* Header */
 
 .site-header {
@@ -243,8 +246,15 @@ p {
     padding: 12px 20px;
     border-radius: 12px;
 
+    color: #181C29;
     transition: background-color 0.4s, color 0.3s;
 }
+
+.current {
+    color: #FF4646;
+    background-color: rgba(255, 70, 70, 0.1);
+}
+
 .burger-icon {
    display: none;
 }
