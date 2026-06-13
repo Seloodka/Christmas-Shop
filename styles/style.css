@@ -521,3 +521,7 @@ p {
     align-items: center;
     padding: 8px;
 }
+
+.school-link {
+    transition: color 0.3s;
+}

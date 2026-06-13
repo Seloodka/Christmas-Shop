@@ -29,4 +29,8 @@
   .nav-item:hover .text-hover {
     color: #FF4646;
   }
+
+  .school-link:hover {
+    color: #FF4646;
+  }
 }
