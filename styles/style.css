@@ -354,6 +354,8 @@ p {
 
     background-color: #ECF3F8;
     border-radius: 20px;
+
+    cursor: pointer;
 }
 
 .card .image-container {
@@ -378,6 +380,8 @@ p {
     line-height: 152%;
     letter-spacing: 8%;
     text-transform: uppercase;
+
+    transition: color 0.3s;
 }
 
 .card-tag {
