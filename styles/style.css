@@ -58,7 +58,7 @@ button {
     text-transform: uppercase;
 }
 
-.header-3, h3 {
+h3 {
     font-family: "Montserrat", sans-serif;
     font-size: 16px;
     font-weight: 600;
@@ -67,7 +67,7 @@ button {
     text-transform: uppercase;
 }
 
-.header-4, h4 {
+h4 {
     font-family: "Montserrat", sans-serif;
     font-size: 12px;
     font-weight: 600;
@@ -371,16 +371,33 @@ p {
     background-color: #FFFFFF;
     border-radius: 20px;
 }
+.card-title {
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 152%;
+    letter-spacing: 8%;
+    text-transform: uppercase;
+}
 
-.card-work .header-4{
+.card-tag {
+    font-family: "Montserrat", sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 130%;
+    letter-spacing: 5%;
+    text-transform: uppercase;
+}
+
+.card-work .card-tag{
     color: #4361FF;
 }
 
-.card-health .header-4{
+.card-health .card-tag{
     color: #06A44F;
 }
 
-.card-harmony .header-4{
+.card-harmony .card-tag{
     color: #FF43F7;
 }
 
