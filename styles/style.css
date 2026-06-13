@@ -220,6 +220,10 @@ p {
     max-width: inherit;
 }
 
+.text-hover {
+    transition: color 0.3s;
+}
+
 /* Header */
 
 .site-header {

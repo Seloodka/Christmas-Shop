@@ -26,7 +26,7 @@
     color: #FF4646;
   }
 
-  .nav-item:hover {
+  .nav-item:hover .text-hover {
     color: #FF4646;
   }
 }
