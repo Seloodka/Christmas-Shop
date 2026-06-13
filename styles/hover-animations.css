@@ -1,0 +1,13 @@
+@media (hover: hover){
+
+  .slider-button:hover {
+    background-color: #FFFFFF;
+    stroke: #FF4646;
+  }
+
+  .slider-button:hover path {
+    stroke: #FF4646;
+  }
+
+  
+}

@@ -325,15 +325,6 @@ p {
     cursor: pointer;
 }
 
-@media (hover: hover){
-    .slider-button:hover {
-        background-color: #FFFFFF;
-        svg path{
-            stroke: #FF4646;
-        }
-    }
-}
-
 .slider-button:active {
     transform: scale(1.2);
 }
