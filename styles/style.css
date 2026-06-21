@@ -343,6 +343,7 @@ p {
 }
 
 .slider-button:active {
+    background-color: #FFFFFF;
     transform: scale(1.2);
 }
 
