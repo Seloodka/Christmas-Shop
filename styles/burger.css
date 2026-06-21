@@ -1,5 +1,9 @@
+.prevent-scroll {
+  overflow: hidden;
+}
+
 .burger-wrapper {
-  position: absolute;
+  position: fixed;
   top: 64px;
   left: 0px;
   height: calc(100svh - 64px);
