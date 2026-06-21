@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="../styles/fonts.css">
   <link rel="stylesheet" href="../styles/style.css">
   <link rel="stylesheet" href="../styles/gifts-page-styles.css">
+  <link rel="stylesheet" href="../styles/burger.css">
   <link rel="stylesheet" href="../styles/responsive-styles.css">
   <link rel="stylesheet" href="../styles/hover-animations.css">
 
@@ -33,10 +34,20 @@
         <li><a class="header-nav-item" href="../contacts">contacts</a></li>
       </ul>
     </nav>
+
     <svg class="burger-icon" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path d="M10 16H30" stroke="#181C29" stroke-linecap="round" stroke-linejoin="round" />
       <path d="M10 24H30" stroke="#181C29" stroke-linecap="round" stroke-linejoin="round" />
     </svg>
+
+    <div class="burger-wrapper burger-closed">
+      <nav class="burger-menu action-small">
+        <a class="burger-menu-item" href="./pages/gifts.html">gifts</a>
+        <a class="burger-menu-item" href="./about">about</a>
+        <a class="burger-menu-item" href="./best">best</a>
+        <a class="burger-menu-item" href="./contacts">contacts</a>
+      </nav>
+    </div>
   </header>
 
   <main class="page-wrapper garland flex-center">
@@ -287,6 +298,7 @@
       </div>
     </div>
   </footer>
+  <script src="../JS/burger.js"></script>
 </body>
 
 </html>
