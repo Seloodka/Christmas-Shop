@@ -1,0 +1,49 @@
+.burger-wrapper {
+  position: absolute;
+  height: calc(100svh - 64px);
+  width: 100%;
+  top: 64px;
+  left: 0px;
+  background-color: #FFFFFF;
+}
+
+.burger-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.burger-menu-item {
+  padding: 12px 20px;
+  border-radius: 12px;
+
+  color: #181C29;
+  transition: background-color 0.4s, color 0.3s;
+}
+
+.burger-icon {
+ display: none;
+}
+
+.burger-icon path { 
+  transition: transform 0.3s ease-in-out; 
+  transform-origin: 20px 20px;
+  transform: translateY(0px) rotate(0deg);
+}
+
+.burger-icon path {
+  transform-origin: 20px 20px;
+  transform: rotate(0deg);
+}
+
+.burger-open :nth-child(1) {
+  transform-origin: 20px 16px;
+  transform: translateY(4px) rotate(45deg);
+}
+
+.burger-open :nth-child(2) {
+  transform-origin: 20px 24px;
+  transform: translateY(-4px) rotate(-45deg);
+}
