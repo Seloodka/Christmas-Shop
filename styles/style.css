@@ -404,15 +404,15 @@ p {
     text-transform: uppercase;
 }
 
-.card-work .card-tag{
+.card[data-card-type="work"] .card-tag {
     color: #4361FF;
 }
 
-.card-health .card-tag{
+.card[data-card-type="health"] .card-tag {
     color: #06A44F;
 }
 
-.card-harmony .card-tag{
+.card[data-card-type="harmony"] .card-tag {
     color: #FF43F7;
 }
 
