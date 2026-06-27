@@ -11,7 +11,7 @@ const filterCard = (filter, card) => {
 
 const filterButtons = document.querySelectorAll(".filter-button");
 const cardContainer = document.querySelector(".card-container");
-const cardContainerElements = cardContainer.children;
+const cardsInContainer = cardContainer.children;
 const cards = document.querySelectorAll(".card");
 
 filterButtons.forEach((button) => {
@@ -27,8 +27,7 @@ filterButtons.forEach((button) => {
     button.classList.toggle("current-filter");
     currButton.classList.toggle("current-filter");
     
-    [...cardContainerElements].forEach((elem) => elem.remove());
+    [...cardsInContainer].forEach((card) => card.remove());
     cards.forEach((card) => cardContainer.append(filterCard(filter, card)));
-
   })
 })
