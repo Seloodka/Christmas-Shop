@@ -16,5 +16,3 @@ burgerIcon.addEventListener('click', () => {
   }
 
 });
-
-console.log(window.innerWidth - document.body.clientWidth);

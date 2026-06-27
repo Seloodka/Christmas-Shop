@@ -1,7 +1,6 @@
 const filterCard = (filter, card) => {
   if (filter === "all") {
     return card;
-    console.log('ada')
   }
 
   if (card.dataset.cardType === filter) {
