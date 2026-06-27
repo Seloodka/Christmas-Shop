@@ -38,6 +38,7 @@
 
 .burger-icon {
  display: none;
+ cursor: pointer;
 }
 
 .burger-icon path { 
