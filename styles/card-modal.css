@@ -1,0 +1,88 @@
+.card-modal {
+  width: 400px;
+
+  border: none;
+  background-color: #ECF3F8;
+  border-radius: 20px;
+
+}
+
+.card-modal::backdrop {
+  background-color:rgba(24, 28, 41, 0.8);
+}
+
+.modal-close {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+}
+
+.card-modal .image-container {
+  max-height: 230px;
+}
+
+.modal-text-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  min-height: 112px;
+  gap: 20px;
+  padding: 20px;
+  
+  background-color: #FFFFFF;
+  border-radius: 20px;
+}
+
+.modal-card-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  gap: 8px;
+}
+
+.stats-title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 130%;
+  letter-spacing: 5%;
+  text-transform: uppercase;
+  color: #181C29;
+}
+
+.stat {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 148%;
+  color: #181C29;
+}
+
+.stat-rating-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.rating-container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.card-modal[data-card-type="work"] .card-tag {
+  color: #4361FF;
+}
+
+.card-modal[data-card-type="health"] .card-tag {
+  color: #06A44F;
+}
+
+.card-modal[data-card-type="harmony"] .card-tag {
+  color: #FF43F7;
+}
