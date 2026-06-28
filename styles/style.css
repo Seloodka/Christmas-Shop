@@ -374,12 +374,12 @@ p {
 
 .card-text {
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     justify-content: start;
-    height: 112px;
+    min-height: 112px;
     gap: 8px;
-    
     padding: 20px;
+    
     background-color: #FFFFFF;
     border-radius: 20px;
 }
