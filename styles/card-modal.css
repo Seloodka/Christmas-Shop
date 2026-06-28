@@ -1,10 +1,10 @@
 .card-modal {
   width: 400px;
 
+  outline: none;
   border: none;
   background-color: #ECF3F8;
   border-radius: 20px;
-
 }
 
 .card-modal::backdrop {
