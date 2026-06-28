@@ -215,8 +215,8 @@ p {
 }
 
 .image-container img {
-    max-height: 100%;
-    max-width: 100%;
+    width: 100%;
+    object-fit: cover;
 }
 
 .text-hover {
@@ -370,6 +370,7 @@ p {
 
 .card .image-container {
     max-width: 310px;
+    max-height: 230px;
 }
 
 .card-text {
