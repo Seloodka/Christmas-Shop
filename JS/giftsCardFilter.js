@@ -12,7 +12,6 @@ const filterCard = (filter, card) => {
 const filterButtons = document.querySelectorAll(".filter-button");
 const cardContainer = document.querySelector(".card-container");
 const cardsInContainer = cardContainer.children;
-const cards = document.querySelectorAll(".card");
 
 filterButtons.forEach((button) => {
   button.addEventListener('click', () => {
