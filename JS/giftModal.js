@@ -41,7 +41,7 @@ const fillStats = (stats, statsRatings) => {
   })
 }
 
-const clearCardModal = (modal, modalContent) => {
+const clearModal = (modal, modalContent) => {
   modalContent.image.firstElementChild.remove();
   modalContent.stats.forEach((stat) => resetStatRatingScale(stat));
 }
@@ -113,5 +113,5 @@ document.addEventListener('mousemove', (event) => {
 });
 
 modal.addEventListener("close", () => {
-  clearCardModal(modal, modalContent);
+  clearModal(modal, modalContent);
 })
