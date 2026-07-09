@@ -58,6 +58,14 @@ const cardDescription = {
   }
 }
 
+const modalContent = {
+  image: modal.querySelector(".image-container"),
+  tag: modal.querySelector(".card-tag"),
+  name: modal.querySelector(".card-title"),
+  description: modal.querySelector(".card-description"),
+  stats: modal.querySelectorAll(".stat"),
+}
+
 const giftsStats = {
   work: [5, 5, 2, 4],
   health: [4, 3, 5, 4],
