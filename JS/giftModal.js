@@ -95,7 +95,7 @@ modal.querySelector(".modal-close").addEventListener("click", () => {
   modal.close();
 })
 
-document.addEventListener('mousemove', (event) => {
+modal.addEventListener('click', (event) => {
     const x = event.clientX;
     const y = event.clientY;
 
