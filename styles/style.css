@@ -550,3 +550,22 @@ p {
 .top-button-hidden {
     display: none;
 }
+
+@keyframes show {
+  from {
+    transform: scale(0);
+    opacity: 0%;
+  }
+  80% {
+    transform: scale(1.2);
+    opacity: 50%;
+  }
+  to {
+    transform: scale(1);
+    opacity: 100%;
+  }
+}
+
+.anim-show {
+    animation: show 0.3s ease-in-out forwards;
+}
