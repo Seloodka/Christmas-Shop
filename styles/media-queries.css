@@ -21,6 +21,9 @@
   .burger-wrapper {
     display: none;
   }
+  .top-button {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 768px) {
