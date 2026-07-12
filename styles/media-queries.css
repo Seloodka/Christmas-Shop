@@ -8,8 +8,7 @@
   }
 
   .section-container {
-    margin: 30px 4px;
-    padding: 30px 4px;
+    padding: 60px 8px;
   }
 
   .content-container-text {
@@ -39,17 +38,18 @@
   .content-container {
     flex-wrap: wrap;
     padding-top: 60px;
-    
   }
+
   .content-container-text {
     margin: 0 20px;
     width: 100%;
   }
+
   .filter {
     gap: 0px;
   }
-
-.filter-button {
+  
+  .filter-button {
     padding: 12px 8px;
   }
 }

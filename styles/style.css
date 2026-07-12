@@ -186,8 +186,7 @@ p {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin: 30px 41px;
-    padding: 30px 41px;
+    padding: 60px 82px;
 
     text-align: center;
 }
@@ -235,7 +234,7 @@ p {
 }
 
 .logo {
-    margin: auto 20px;
+    padding: 8px 20px;
     gap: 8px;
 }
 
@@ -458,7 +457,7 @@ p {
 }
 
 .timer-text {
-    width: 100%;
+    width: 80px;
 }
 
 .timer-element:not(:last-child)::after {
