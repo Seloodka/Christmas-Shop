@@ -73,7 +73,7 @@ const createModalSuperpowerTemplate = (superpowers) => {
   return html;
 }
 
-const clearModal = (modal, modalContent) => {
+const closeModalHandler = (event) => {
   modalContent.imageContainer.firstElementChild.remove();
   modalContent.contentWrapper.innerHTML  = "";
 }
@@ -95,11 +95,12 @@ const cardClickHandler = (event) => {
 
   modal.dataset.cardType = cardType;
 
-
   modal.showModal();
 
   modal.style.marginTop = (document.documentElement.clientHeight - modal.clientHeight) / 2 + "px";
   modal.style.marginLeft = (document.documentElement.clientWidth - modal.clientWidth) / 2 + "px";
+   modal.style.marginBottom = (document.documentElement.clientHeight - modal.clientHeight) / 2 + "px";
+  modal.style.marginRight = (document.documentElement.clientWidth - modal.clientWidth) / 2 + "px";
 }
 
 const modal = document.querySelector(".card-modal");
@@ -135,6 +136,4 @@ modal.addEventListener('click', (event) => {
     }
 });
 
-modal.addEventListener("close", () => {
-  clearModal(modal, modalContent);
-})
+modal.addEventListener("close", closeModalHandler);
