@@ -28,5 +28,16 @@ const renderCards = (cards, container) => {
   });
 }
 
+const renderCardsCount = (cards, container,  count) => {
+  for (let i = 0; i < count; i++) {
+    container.insertAdjacentHTML('beforeend', createCardTemplate(cards[i]));
+  }
+}
 
-renderCards(cardsArray, cardsContainer);
+if (document.title == "Gifts") {
+  renderCards(cardsArray, cardsContainer);
+}
+
+if (document.title == "Christmas Shop") {
+  renderCardsCount(cardsArray, cardsContainer, 4)
+}
