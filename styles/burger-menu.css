@@ -8,14 +8,17 @@
   left: 0px;
   height: calc(100svh - 64px);
   width: 100svw;
-
+  
+  transform: translateX(0px);
   visibility: visible;
   background-color: #FFFFFF;
   opacity: 1;
-  transition: opacity 0.3s ease-in, visibility 0.3s ease;
+
+  transition: opacity 0.3s ease-in, visibility 0.3s ease, transform 0.2s ease-in;
 }
 
 .burger-closed {
+  transform: translateX(100svw);
   visibility: hidden;
   opacity: 0;
 }

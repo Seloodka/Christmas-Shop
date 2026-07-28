@@ -10,9 +10,9 @@ const getRemainingDateTime = () => {
 
   return {
     days: remainingDays,
-    hours: 23 - now.getHours(),
-    minutes: 59 - now.getMinutes(),
-    seconds: 59 - now.getSeconds(),
+    hours: 24 - now.getHours() - 1,
+    minutes: 60 - now.getMinutes() - 1,
+    seconds: 60 - now.getSeconds() - 1,
   }
 }
 
