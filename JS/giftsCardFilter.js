@@ -1,3 +1,5 @@
+import { cardsContainer } from './globalVars.js';
+
 const filterCard = (filter, card) => {
   if (filter === "all") {
     return card;
@@ -9,9 +11,10 @@ const filterCard = (filter, card) => {
   return "";
 }
 
+
+const cards = document.querySelectorAll(".card");
 const filterButtons = document.querySelectorAll(".filter-button");
-const cardContainer = document.querySelector(".card-container");
-const cardsInContainer = cardContainer.children;
+const cardsInContainer = cardsContainer.children;
 
 filterButtons.forEach((button) => {
   button.addEventListener('click', () => {
@@ -27,6 +30,6 @@ filterButtons.forEach((button) => {
     currButton.classList.toggle("current-filter");
     
     [...cardsInContainer].forEach((card) => card.remove());
-    cards.forEach((card) => cardContainer.append(filterCard(filter, card)));
+    cards.forEach((card) => cardsContainer.append(filterCard(filter, card)));
   })
 })

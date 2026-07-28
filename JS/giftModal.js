@@ -58,6 +58,8 @@ const cardDescription = {
   }
 }
 
+const modal = document.querySelector(".card-modal");
+
 const modalContent = {
   image: modal.querySelector(".image-container"),
   tag: modal.querySelector(".card-tag"),
