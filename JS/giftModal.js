@@ -96,11 +96,6 @@ const cardClickHandler = (event) => {
   modal.dataset.cardType = cardType;
 
   modal.showModal();
-
-  modal.style.marginTop = (document.documentElement.clientHeight - modal.clientHeight) / 2 + "px";
-  modal.style.marginLeft = (document.documentElement.clientWidth - modal.clientWidth) / 2 + "px";
-   modal.style.marginBottom = (document.documentElement.clientHeight - modal.clientHeight) / 2 + "px";
-  modal.style.marginRight = (document.documentElement.clientWidth - modal.clientWidth) / 2 + "px";
 }
 
 const modal = document.querySelector(".card-modal");
