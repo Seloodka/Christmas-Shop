@@ -1,16 +1,32 @@
 const scrollToTopButton = document.querySelector(".top-button");
 
-document.addEventListener('scroll', (event) => {
-  if (window.scrollY > 250) {
+const isMobile = () => {
+  return /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+}
+
+const scrollTopHandler = (event) => {
+  window.scrollTo({
+    top: 0,
+    left: 0,
+    behavior: "smooth"
+  });
+}
+
+const scrollHandlerEvent = (event) => {
+    if (window.scrollY > 250) {
     scrollToTopButton.classList.remove("top-button-hidden");
     scrollToTopButton.classList.add("anim-show");
   } else {
     scrollToTopButton.classList.add("top-button-hidden");
+    scrollToTopButton.classList.remove("anim-show");
   }
-});
+}
 
-scrollToTopButton.addEventListener('click', () => window.scrollTo({
-  top: 0,
-  left: 0,
-  behavior: "smooth"
-}));
+document.addEventListener('scroll', scrollHandlerEvent);
+
+if (isMobile()) {
+  scrollToTopButton.addEventListener('touchend', scrollTopHandler);
+} else {
+  scrollToTopButton.addEventListener('click', scrollTopHandler);
+}
+
