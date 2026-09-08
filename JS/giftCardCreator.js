@@ -1,12 +1,15 @@
-import {cardsArray, cardsContainer} from './globalVars.js';
+import { cardsArray, cardsContainer } from "./globalVars.js";
 
 const getType = (card) => {
   return card.category.split(" ")[1].toLowerCase();
-}
+};
 
 const getCardImagePath = (card) => {
+  if (document.title === "Christmas Shop") {
+    return "./images/gifts/gift-for-" + getType(card) + ".png";
+  }
   return "../images/gifts/gift-for-" + getType(card) + ".png";
-}
+};
 
 const createCardTemplate = (card) => {
   return `
@@ -20,24 +23,24 @@ const createCardTemplate = (card) => {
       </div>
     </article>
   `;
-}
+};
 
 const renderCards = (cards, container) => {
-  cards.forEach(card => {
-    container.insertAdjacentHTML('beforeend', createCardTemplate(card));
+  cards.forEach((card) => {
+    container.insertAdjacentHTML("beforeend", createCardTemplate(card));
   });
-}
+};
 
-const renderCardsCount = (cards, container,  count) => {
+const renderCardsCount = (cards, container, count) => {
   for (let i = 0; i < count; i++) {
-    container.insertAdjacentHTML('beforeend', createCardTemplate(cards[i]));
+    container.insertAdjacentHTML("beforeend", createCardTemplate(cards[i]));
   }
-}
+};
 
 if (document.title == "Gifts") {
   renderCards(cardsArray, cardsContainer);
 }
 
 if (document.title == "Christmas Shop") {
-  renderCardsCount(cardsArray, cardsContainer, 4)
+  renderCardsCount(cardsArray, cardsContainer, 4);
 }
